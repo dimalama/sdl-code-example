@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SDL Test Task</title>
+    <link rel="stylesheet" type="text/css" href="styles/sdl.base.css">
+</head>
+<body class="mod-grid">
+    <p>Leave input fields empty if you want columns and rows are randomly created<br/> and color change time will have default value of 2 seconds.</p>
+    <form>
+        <label>Column Amount:<br/><input name="column" type="number" placeholder="Enter column number" min="1" max="20" pattern="\d*"></label>
+        <label>Rows Amount:<br/><input name="row" type="number" placeholder="Enter rows number" min="1" max="20" pattern="\d*"></label>
+        <label>Color Change Time:<br/><input name="time" type="number" placeholder="Enter color time change" pattern="\d*"></label><br/>
+        <input type="submit" id="apply" name="Apply" />
+    </form>
+</body>
+
+<script type="text/javascript" src="./scripts/sdl.namespaces.js"></script>
+<script type="text/javascript" src="./scripts/helpers/sdl.globals.js"></script>
+<script type="text/javascript" src="./scripts/modules/sdl.mod.grid.js"></script>
+<script type="text/javascript" src="./scripts/initializers/sdl.mod.grid.setup.js"></script>
+
+</html>
